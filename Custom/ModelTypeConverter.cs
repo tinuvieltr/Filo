@@ -34,7 +34,7 @@ namespace FiloKiralama.Custom
             {
                 foreach (AracModel model in Data.AracModeller)
                 {
-                    if (model.Id == (int)value)
+                    if (model.Ad == (string)value)
                     {
                         return model;
                     }

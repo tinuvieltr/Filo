@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using FiloKiralama.Custom;
 
 namespace FiloKiralama.Entity
 {
@@ -23,6 +24,7 @@ namespace FiloKiralama.Entity
         [Category("Genel")]
         [DisplayName("Modeli")]
         [Description("")]
+        [TypeConverter(typeof(ModelConverter))]
         public AracModel Model { get; set; }
 
         [Category("Genel")]

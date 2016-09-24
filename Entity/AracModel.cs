@@ -11,7 +11,7 @@ namespace FiloKiralama.Entity
         public string Ad { get; set; }
         public string Opsiyon { get; set; }
 
-        public override string ToString()
+        public override String ToString()
         {
             return Ad;
         }

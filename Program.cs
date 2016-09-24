@@ -13,7 +13,6 @@ namespace FiloKiralama
         [STAThread]
         static void Main()
         {
-            Data.InitData();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());

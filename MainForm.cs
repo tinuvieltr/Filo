@@ -24,6 +24,10 @@ namespace FiloKiralama
         private void Form1_Load(object sender, EventArgs e)
         {
             Data.InitData();
+
+            var d = new AracEditDialog();
+            d.Arac = Data.Araclar[0];
+            d.Show(this);
         }
 
         private void mainRibbon_Click(object sender, EventArgs e)

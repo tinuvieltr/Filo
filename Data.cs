@@ -16,9 +16,6 @@ namespace FiloKiralama
 
         public static List<Musteri> Musteriler = new List<Musteri>();
 		
-		
-
-
         public static void InitData()
         {
             #region Araç Model
@@ -89,10 +86,6 @@ namespace FiloKiralama
 
 
             #endregion
-
-
-
         }
-
     }
 }
