@@ -14,7 +14,7 @@ namespace FiloKiralama
 
         public static List<Arac> Araclar = new List<Arac>();
 
-        public static List<Arac> Araclar2 = new List<Arac>();
+        public static List<Musteri> Musteriler = new List<Musteri>();
 		
 		
 
@@ -67,7 +67,25 @@ namespace FiloKiralama
 
             #region Müşteri
 
-            
+            var musteri = new Musteri();
+            musteri.Id = 1;
+            musteri.Ad = "Garanti Bankası";
+            musteri.VergiNo = "1";
+            musteri.VergiDaire = "Ankara";
+            musteri.Tel = "1";
+            musteri.Email = "info@garanti.com";
+            musteri.Yetkili = "Mustafa Özdemir";
+
+            musteri = new Musteri();
+            musteri.Id = 1;
+            musteri.Ad = "MY Kuyumculuk";
+            musteri.VergiNo = "1";
+            musteri.VergiDaire = "Ankara";
+            musteri.Tel = "1";
+            musteri.Email = "info@mykuyumculuk.com";
+            musteri.Yetkili = "Zeki Altan";
+
+
 
             #endregion
 
