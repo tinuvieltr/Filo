@@ -38,6 +38,7 @@
             this.aracSearchControl1.Name = "aracSearchControl1";
             this.aracSearchControl1.Size = new System.Drawing.Size(876, 321);
             this.aracSearchControl1.TabIndex = 0;
+            this.aracSearchControl1.Load += new System.EventHandler(this.aracSearchControl1_Load);
             // 
             // AracSearchDialog
             // 

@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using FiloKiralama.Dialog.Arac;
 
 namespace FiloKiralama.Control
 {
@@ -15,12 +16,11 @@ namespace FiloKiralama.Control
         {
             InitializeComponent();
 
-            var uninstallButtonColumn = new DataGridViewButtonColumn { Name = "show_column", Text = "Göster" };
+            var showButtonColumn = new DataGridViewButtonColumn { Name = "show_column", Text = "Göster", Width = 100 };
             const int columnIndex = 0;
-
-            if (aracGrid.Columns["show_column"] == null)
+            if (this.aracGrid.Columns["show_column"] == null)
             {
-                aracGrid.Columns.Insert(columnIndex, uninstallButtonColumn);
+                this.aracGrid.Columns.Insert(columnIndex, showButtonColumn);
             }
 
             aracGrid.CellClick += aracGrid_CellClick;
@@ -28,12 +28,12 @@ namespace FiloKiralama.Control
 
         void aracGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == aracGrid.Columns["show_column"].Index)
-            {
-                //Do Something with your button.
-            }
-        }
+            if (e.ColumnIndex != aracGrid.Columns["show_column"].Index) return;
+            var rowIndex = e.RowIndex;
+            var arac = aracGrid.Rows[rowIndex].DataBoundItem as Entity.Arac;
+            var dialog = new AracEditDialog { Arac = arac };
+            dialog.Show(this);
 
-        
+        }
     }
 }

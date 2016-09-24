@@ -13,6 +13,11 @@ namespace FiloKiralama.Dialog.Arac
         {
 
         }
+
+        private void aracSearchControl1_Load(object sender, System.EventArgs e)
+        {
+
+        }
         
     }
 }

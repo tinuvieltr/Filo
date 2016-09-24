@@ -47,6 +47,19 @@ namespace FiloKiralama
             Araclar.Add(arac);
             #endregion
 
+            #region 06ED2636
+            arac = new Arac();
+            arac.Id = 1;
+            arac.Model = AracModeller[0];
+            arac.MotorNo = "MTR5895";
+            arac.SaseNo = "SASE333";
+            arac.Plaka = "06ED2636";
+            arac.MusteriId = 1;
+            arac.Renk = Color.Blue.Name;
+            arac.TescilTarihi = new DateTime(2016, 2, 16);
+            Araclar.Add(arac);
+            #endregion
+
             #region 06DA3412
             arac = new Arac();
             arac.Id = 2;
