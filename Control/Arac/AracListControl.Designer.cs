@@ -29,17 +29,26 @@
         private void InitializeComponent()
         {
             this.aracGrid = new System.Windows.Forms.DataGridView();
+            this.columnGoster = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.aracGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // aracGrid
             // 
             this.aracGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.aracGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.columnGoster});
             this.aracGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aracGrid.Location = new System.Drawing.Point(0, 0);
             this.aracGrid.Name = "aracGrid";
             this.aracGrid.Size = new System.Drawing.Size(507, 263);
             this.aracGrid.TabIndex = 0;
+            // 
+            // columnGoster
+            // 
+            this.columnGoster.HeaderText = "Göster";
+            this.columnGoster.Name = "columnGoster";
+            this.columnGoster.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // AracListControl
             // 
@@ -56,6 +65,7 @@
         #endregion
 
         public System.Windows.Forms.DataGridView aracGrid;
+        private System.Windows.Forms.DataGridViewButtonColumn columnGoster;
 
     }
 }
