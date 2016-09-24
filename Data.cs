@@ -14,7 +14,7 @@ namespace FiloKiralama
 
         public static List<Arac> Araclar = new List<Arac>();
 
-
+        public static List<Arac> Araclar2 = new List<Arac>();
 		
 		
 
