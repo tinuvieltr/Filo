@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using FiloKiralama.Dialog.Arac;
+using FiloKiralama.Properties;
 
 namespace FiloKiralama.Control
 {
@@ -16,7 +17,8 @@ namespace FiloKiralama.Control
         {
             InitializeComponent();
 
-            var showButtonColumn = new DataGridViewButtonColumn { Name = "show_column", Text = "Göster", Width = 100 };
+            var showButtonColumn = new DataGridViewImageColumn { Name = "show_column", Width = 100 };
+            showButtonColumn.Image = Resources.search24;
             const int columnIndex = 0;
             if (this.aracGrid.Columns["show_column"] == null)
             {

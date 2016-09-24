@@ -40,6 +40,7 @@
             this.aracGrid.Name = "aracGrid";
             this.aracGrid.Size = new System.Drawing.Size(507, 263);
             this.aracGrid.TabIndex = 0;
+            this.aracGrid.Visible = false;
             // 
             // AracListControl
             // 

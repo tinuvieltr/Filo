@@ -45,7 +45,8 @@ namespace FiloKiralama.Control
             }
 
             aracListControl1.aracGrid.DataSource = result.ToList();
- 
+            aracListControl1.aracGrid.Visible = true;
+
 
         }
     }
