@@ -36,17 +36,18 @@
             this.aracSearchControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aracSearchControl1.Location = new System.Drawing.Point(0, 0);
             this.aracSearchControl1.Name = "aracSearchControl1";
-            this.aracSearchControl1.Size = new System.Drawing.Size(560, 321);
+            this.aracSearchControl1.Size = new System.Drawing.Size(876, 321);
             this.aracSearchControl1.TabIndex = 0;
             // 
             // AracSearchDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 321);
+            this.ClientSize = new System.Drawing.Size(876, 321);
             this.Controls.Add(this.aracSearchControl1);
             this.Name = "AracSearchDialog";
             this.Text = "Araç Sorgula";
+            this.Load += new System.EventHandler(this.AracSearchDialog_Load);
             this.ResumeLayout(false);
 
         }

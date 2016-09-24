@@ -8,5 +8,11 @@ namespace FiloKiralama.Dialog.Arac
         {
             InitializeComponent();
         }
+
+        private void AracSearchDialog_Load(object sender, System.EventArgs e)
+        {
+
+        }
+        
     }
 }

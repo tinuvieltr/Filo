@@ -57,7 +57,7 @@ namespace FiloKiralama
             arac.MotorNo = "MTR312";
             arac.SaseNo = "SASE312";
             arac.Plaka = "06DA3412";
-            arac.MusteriId = 1;
+            arac.MusteriId = 2;
             arac.Renk = Color.White.Name;
             arac.TescilTarihi = new DateTime(2015, 7, 11);
             Araclar.Add(arac);
@@ -75,16 +75,17 @@ namespace FiloKiralama
             musteri.Tel = "1";
             musteri.Email = "info@garanti.com";
             musteri.Yetkili = "Mustafa Özdemir";
+            Musteriler.Add(musteri);
 
             musteri = new Musteri();
-            musteri.Id = 1;
+            musteri.Id = 2;
             musteri.Ad = "MY Kuyumculuk";
             musteri.VergiNo = "1";
             musteri.VergiDaire = "Ankara";
             musteri.Tel = "1";
             musteri.Email = "info@mykuyumculuk.com";
             musteri.Yetkili = "Zeki Altan";
-
+            Musteriler.Add(musteri);
 
 
             #endregion

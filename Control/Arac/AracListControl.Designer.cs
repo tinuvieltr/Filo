@@ -55,6 +55,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView aracGrid;
+        public System.Windows.Forms.DataGridView aracGrid;
+
     }
 }
