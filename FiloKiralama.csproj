@@ -91,12 +91,72 @@
     <Compile Include="Control\Arac\AracSearchControl.Designer.cs">
       <DependentUpon>AracSearchControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Control\Bakim\BakimEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Bakim\BakimEditControl.Designer.cs">
+      <DependentUpon>BakimEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Bakim\BakimListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Bakim\BakimListControl.Designer.cs">
+      <DependentUpon>BakimListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Lastik\LastikEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Lastik\LastikEditControl.Designer.cs">
+      <DependentUpon>LastikEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Lastik\LastikListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Lastik\LastikListControl.Designer.cs">
+      <DependentUpon>LastikListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Musteri\MusteriEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Musteri\MusteriEditControl.Designer.cs">
+      <DependentUpon>MusteriEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Musteri\MusteriListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Musteri\MusteriListControl.Designer.cs">
+      <DependentUpon>MusteriListControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data.cs" />
-    <Compile Include="Dialog\AracSearchDialog.cs">
+    <Compile Include="Dialog\Arac\AracSearchDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dialog\AracSearchDialog.Designer.cs">
+    <Compile Include="Dialog\Arac\AracSearchDialog.Designer.cs">
       <DependentUpon>AracSearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Musteri\MusteriEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\Musteri\MusteriEditDialog.Designer.cs">
+      <DependentUpon>MusteriEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Musteri\MusteriSearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\Musteri\MusteriSearchDialog.Designer.cs">
+      <DependentUpon>MusteriSearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Teklif\TeklifEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\Teklif\TeklifEditDialog.Designer.cs">
+      <DependentUpon>TeklifEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Teklif\TeklifLSearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\Teklif\TeklifLSearchDialog.Designer.cs">
+      <DependentUpon>TeklifLSearchDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="Entity\Arac.cs" />
     <Compile Include="Entity\AracMaliyet.cs" />
@@ -143,8 +203,14 @@
     <EmbeddedResource Include="Control\Arac\AracSearchControl.resx">
       <DependentUpon>AracSearchControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialog\AracSearchDialog.resx">
+    <EmbeddedResource Include="Dialog\Arac\AracSearchDialog.resx">
       <DependentUpon>AracSearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\Musteri\MusteriSearchDialog.resx">
+      <DependentUpon>MusteriSearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\Teklif\TeklifLSearchDialog.resx">
+      <DependentUpon>TeklifLSearchDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

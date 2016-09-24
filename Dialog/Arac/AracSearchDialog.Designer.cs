@@ -1,4 +1,4 @@
-﻿namespace FiloKiralama.Dialog
+﻿namespace FiloKiralama.Dialog.Arac
 {
     partial class AracSearchDialog
     {
