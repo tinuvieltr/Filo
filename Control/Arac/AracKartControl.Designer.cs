@@ -66,7 +66,6 @@
             // 
             // aracEditControl1
             // 
-            this.aracEditControl1.AracId = 0;
             this.aracEditControl1.Location = new System.Drawing.Point(6, 6);
             this.aracEditControl1.Name = "aracEditControl1";
             this.aracEditControl1.Size = new System.Drawing.Size(272, 430);

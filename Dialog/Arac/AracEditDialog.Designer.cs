@@ -28,11 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.aracEditControl = new FiloKiralama.Control.AracEditControl();
+            this.SuspendLayout();
+            // 
+            // aracEditControl
+            // 
+            this.aracEditControl.Arac = null;
+            this.aracEditControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.aracEditControl.Location = new System.Drawing.Point(0, 0);
+            this.aracEditControl.Name = "aracEditControl";
+            this.aracEditControl.Size = new System.Drawing.Size(369, 440);
+            this.aracEditControl.TabIndex = 0;
+            // 
+            // AracEditDialog
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "AracEditDialog";
+            this.ClientSize = new System.Drawing.Size(369, 440);
+            this.Controls.Add(this.aracEditControl);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Name = "AracEditDialog";
+            this.Load += new System.EventHandler(this.AracEditDialog_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Control.AracEditControl aracEditControl;
     }
 }

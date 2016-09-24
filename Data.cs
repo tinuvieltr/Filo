@@ -40,7 +40,7 @@ namespace FiloKiralama
             #region 06DA1112
             var arac = new Arac();
             arac.Id = 1;
-            arac.ModelId = 1;
+            arac.Model = AracModeller[0];
             arac.MotorNo = "MTR112";
             arac.SaseNo = "SASE112";
             arac.Plaka = "06DA1112";
@@ -52,8 +52,8 @@ namespace FiloKiralama
 
             #region 06DA3412
             arac = new Arac();
-            arac.Id = 1;
-            arac.ModelId = 1;
+            arac.Id = 2;
+            arac.Model = AracModeller[0];
             arac.MotorNo = "MTR312";
             arac.SaseNo = "SASE312";
             arac.Plaka = "06DA3412";

@@ -128,6 +128,12 @@
       <DependentUpon>MusteriListControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Data.cs" />
+    <Compile Include="Dialog\Arac\AracEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\Arac\AracEditDialog.Designer.cs">
+      <DependentUpon>AracEditDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dialog\Arac\AracSearchDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +197,7 @@
     <Compile Include="Splash.Designer.cs">
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom\ModelTypeConverter.cs" />
     <EmbeddedResource Include="Control\Arac\AracEditControl.resx">
       <DependentUpon>AracEditControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Control\Arac\AracSearchControl.resx">
       <DependentUpon>AracSearchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\Arac\AracEditDialog.resx">
+      <DependentUpon>AracEditDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialog\Arac\AracSearchDialog.resx">
       <DependentUpon>AracSearchDialog.cs</DependentUpon>
