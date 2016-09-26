@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeklifLSearchDialog));
             this.teklif1 = new FiloKiralama.Control.Teklif.Teklif();
             this.SuspendLayout();
             // 
@@ -46,6 +47,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(907, 382);
             this.Controls.Add(this.teklif1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TeklifLSearchDialog";
             this.Text = "Teklif Sorgula";
             this.ResumeLayout(false);

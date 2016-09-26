@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
 using System.Linq;
-using System.Text;
+using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 using FiloKiralama.Dialog.Musteri;
 using FiloKiralama.Properties;
@@ -65,7 +61,7 @@ namespace FiloKiralama.Control.Musteri
                 result = result.Where(x => x.Yetkili.Contains(yetkilikisi));
             }
 
-            musteriListControl1.DataSource = result.ToList();
+            musteriListControl1.DataSource = result.Where(x => x.Id != 0).ToList();
             musteriListControl1.Visible = true;
         }
 

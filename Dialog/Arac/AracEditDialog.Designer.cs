@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AracEditDialog));
             this.aracEditControl = new FiloKiralama.Control.AracEditControl();
             this.SuspendLayout();
             // 
@@ -47,6 +48,7 @@
             this.ClientSize = new System.Drawing.Size(369, 440);
             this.Controls.Add(this.aracEditControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AracEditDialog";
             this.Load += new System.EventHandler(this.AracEditDialog_Load);
             this.ResumeLayout(false);

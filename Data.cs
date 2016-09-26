@@ -86,6 +86,16 @@ namespace FiloKiralama
             #region Müşteri
 
             var musteri = new Musteri();
+            musteri.Id = 0;
+            musteri.Ad = "";
+            musteri.VergiNo = "1";
+            musteri.VergiDaire = "";
+            musteri.Tel = "";
+            musteri.Email = "";
+            musteri.Yetkili = "";
+            Musteriler.Add(musteri);
+            
+            musteri = new Musteri();
             musteri.Id = 1;
             musteri.Ad = "Garanti Bankası";
             musteri.VergiNo = "1";

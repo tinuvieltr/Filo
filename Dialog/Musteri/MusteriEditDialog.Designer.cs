@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MusteriEditDialog));
             this.musteriEditControl1 = new FiloKiralama.Control.Musteri.MusteriEditControl();
             this.SuspendLayout();
             // 
@@ -46,6 +47,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(345, 396);
             this.Controls.Add(this.musteriEditControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MusteriEditDialog";
             this.Text = "Müşteri Ekle / Düzenle";
             this.ResumeLayout(false);

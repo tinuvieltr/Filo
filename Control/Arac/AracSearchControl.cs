@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using DevComponents.DotNetBar;
 using FiloKiralama.Dialog.Arac;
 using FiloKiralama.Entity;
 
@@ -19,10 +20,11 @@ namespace FiloKiralama.Control
         }
 
         private void AracSearchControl_Load(object sender, EventArgs e)
-        {
+        {           
             musteriCombo.DataSource = Data.Musteriler;
             musteriCombo.DisplayMember = "Ad";
             musteriCombo.ValueMember = "Id";
+            musteriCombo.SelectedIndex = -1;
 
             var autocomplete = new AutoCompleteStringCollection();
             autocomplete.AddRange((from a in Data.Araclar
@@ -59,7 +61,7 @@ namespace FiloKiralama.Control
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var dialog = new AracEditDialog {Arac = new Arac()};
+            var dialog = new AracEditDialog { Arac = new Arac() };
             dialog.Show(this);
         }
     }

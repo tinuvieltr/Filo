@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AracSearchDialog));
             this.aracSearchControl1 = new FiloKiralama.Control.AracSearchControl();
             this.SuspendLayout();
             // 
@@ -46,6 +47,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 321);
             this.Controls.Add(this.aracSearchControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AracSearchDialog";
             this.Text = "Araç Sorgula";
             this.Load += new System.EventHandler(this.AracSearchDialog_Load);

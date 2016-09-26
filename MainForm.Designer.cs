@@ -31,11 +31,31 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tanimlarRibbonTab = new System.Windows.Forms.RibbonTab();
             this.tanimlarRibbonPanel = new System.Windows.Forms.RibbonPanel();
+            this.musteriTanimButton = new System.Windows.Forms.RibbonButton();
+            this.kullaniciTanimButton = new System.Windows.Forms.RibbonButton();
+            this.modelTanimButton = new System.Windows.Forms.RibbonButton();
+            this.ribbonButton3 = new System.Windows.Forms.RibbonButton();
+            this.sigortaFirmaTanimButton = new System.Windows.Forms.RibbonButton();
+            this.bankaTanimButton = new System.Windows.Forms.RibbonButton();
+            this.ribbonButton2 = new System.Windows.Forms.RibbonButton();
+            this.yedekAracTanimButton = new System.Windows.Forms.RibbonButton();
+            this.avukatTanimButton = new System.Windows.Forms.RibbonButton();
             this.genelRibbonTab = new System.Windows.Forms.RibbonTab();
             this.genelRibbonPanel = new System.Windows.Forms.RibbonPanel();
+            this.aracRibbonButton = new System.Windows.Forms.RibbonButton();
+            this.teklifRibbonButton = new System.Windows.Forms.RibbonButton();
+            this.lastikRibbonButton = new System.Windows.Forms.RibbonButton();
+            this.hukukRibbonButton = new System.Windows.Forms.RibbonButton();
+            this.finansRibbonButton = new System.Windows.Forms.RibbonButton();
             this.mainRibbon = new System.Windows.Forms.Ribbon();
+            this.ribbonOrbMenuItem1 = new System.Windows.Forms.RibbonOrbMenuItem();
+            this.ribbonOrbMenuItem2 = new System.Windows.Forms.RibbonOrbMenuItem();
+            this.ribbonOrbRecentItem1 = new System.Windows.Forms.RibbonOrbRecentItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -51,26 +71,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ribbonOrbMenuItem1 = new System.Windows.Forms.RibbonOrbMenuItem();
-            this.ribbonOrbMenuItem2 = new System.Windows.Forms.RibbonOrbMenuItem();
-            this.ribbonOrbRecentItem1 = new System.Windows.Forms.RibbonOrbRecentItem();
-            this.aracRibbonButton = new System.Windows.Forms.RibbonButton();
-            this.teklifRibbonButton = new System.Windows.Forms.RibbonButton();
-            this.lastikRibbonButton = new System.Windows.Forms.RibbonButton();
-            this.hukukRibbonButton = new System.Windows.Forms.RibbonButton();
-            this.finansRibbonButton = new System.Windows.Forms.RibbonButton();
-            this.musteriTanimButton = new System.Windows.Forms.RibbonButton();
-            this.kullaniciTanimButton = new System.Windows.Forms.RibbonButton();
-            this.modelTanimButton = new System.Windows.Forms.RibbonButton();
-            this.ribbonButton3 = new System.Windows.Forms.RibbonButton();
-            this.sigortaFirmaTanimButton = new System.Windows.Forms.RibbonButton();
-            this.bankaTanimButton = new System.Windows.Forms.RibbonButton();
-            this.ribbonButton2 = new System.Windows.Forms.RibbonButton();
-            this.yedekAracTanimButton = new System.Windows.Forms.RibbonButton();
-            this.avukatTanimButton = new System.Windows.Forms.RibbonButton();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ribbonSeparator1 = new System.Windows.Forms.RibbonSeparator();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -97,6 +98,94 @@
             this.tanimlarRibbonPanel.Name = "tanimlarRibbonPanel";
             this.tanimlarRibbonPanel.Text = "";
             // 
+            // musteriTanimButton
+            // 
+            this.musteriTanimButton.Image = global::FiloKiralama.Properties.Resources.customers;
+            this.musteriTanimButton.LargeImage = global::FiloKiralama.Properties.Resources.customers;
+            this.musteriTanimButton.MinimumSize = new System.Drawing.Size(100, 0);
+            this.musteriTanimButton.Name = "musteriTanimButton";
+            this.musteriTanimButton.SmallImage = global::FiloKiralama.Properties.Resources.customers;
+            this.musteriTanimButton.Text = "Müşteriler";
+            this.musteriTanimButton.Click += new System.EventHandler(this.musteriTanimButton_Click);
+            // 
+            // kullaniciTanimButton
+            // 
+            this.kullaniciTanimButton.Image = global::FiloKiralama.Properties.Resources.kullanicilar;
+            this.kullaniciTanimButton.LargeImage = global::FiloKiralama.Properties.Resources.kullanicilar;
+            this.kullaniciTanimButton.MinimumSize = new System.Drawing.Size(100, 0);
+            this.kullaniciTanimButton.Name = "kullaniciTanimButton";
+            this.kullaniciTanimButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("kullaniciTanimButton.SmallImage")));
+            this.kullaniciTanimButton.Text = "Kullanıcılar";
+            this.kullaniciTanimButton.Click += new System.EventHandler(this.kullaniciTanimButton_Click);
+            // 
+            // modelTanimButton
+            // 
+            this.modelTanimButton.DropDownItems.Add(this.ribbonButton3);
+            this.modelTanimButton.Image = global::FiloKiralama.Properties.Resources.carmodels;
+            this.modelTanimButton.LargeImage = global::FiloKiralama.Properties.Resources.carmodels;
+            this.modelTanimButton.MinimumSize = new System.Drawing.Size(100, 0);
+            this.modelTanimButton.Name = "modelTanimButton";
+            this.modelTanimButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("modelTanimButton.SmallImage")));
+            this.modelTanimButton.Text = "Araç Modelleri";
+            this.modelTanimButton.Click += new System.EventHandler(this.modelTanimButton_Click);
+            // 
+            // ribbonButton3
+            // 
+            this.ribbonButton3.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton3.Image")));
+            this.ribbonButton3.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton3.LargeImage")));
+            this.ribbonButton3.Name = "ribbonButton3";
+            this.ribbonButton3.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton3.SmallImage")));
+            this.ribbonButton3.Text = "ribbonButton3";
+            // 
+            // sigortaFirmaTanimButton
+            // 
+            this.sigortaFirmaTanimButton.Image = global::FiloKiralama.Properties.Resources.sigorta;
+            this.sigortaFirmaTanimButton.LargeImage = global::FiloKiralama.Properties.Resources.sigorta;
+            this.sigortaFirmaTanimButton.MinimumSize = new System.Drawing.Size(100, 0);
+            this.sigortaFirmaTanimButton.Name = "sigortaFirmaTanimButton";
+            this.sigortaFirmaTanimButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("sigortaFirmaTanimButton.SmallImage")));
+            this.sigortaFirmaTanimButton.Text = "Sigorta Firmaları";
+            this.sigortaFirmaTanimButton.Click += new System.EventHandler(this.sigortaFirmaTanimButton_Click);
+            // 
+            // bankaTanimButton
+            // 
+            this.bankaTanimButton.DropDownItems.Add(this.ribbonButton2);
+            this.bankaTanimButton.Image = global::FiloKiralama.Properties.Resources.bank;
+            this.bankaTanimButton.LargeImage = global::FiloKiralama.Properties.Resources.bank;
+            this.bankaTanimButton.MinimumSize = new System.Drawing.Size(100, 0);
+            this.bankaTanimButton.Name = "bankaTanimButton";
+            this.bankaTanimButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("bankaTanimButton.SmallImage")));
+            this.bankaTanimButton.Text = "Bankalar";
+            this.bankaTanimButton.Click += new System.EventHandler(this.bankaTanimButton_Click);
+            // 
+            // ribbonButton2
+            // 
+            this.ribbonButton2.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.Image")));
+            this.ribbonButton2.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.LargeImage")));
+            this.ribbonButton2.Name = "ribbonButton2";
+            this.ribbonButton2.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.SmallImage")));
+            this.ribbonButton2.Text = "ribbonButton2";
+            // 
+            // yedekAracTanimButton
+            // 
+            this.yedekAracTanimButton.Image = global::FiloKiralama.Properties.Resources.yedekarac;
+            this.yedekAracTanimButton.LargeImage = global::FiloKiralama.Properties.Resources.yedekarac;
+            this.yedekAracTanimButton.MinimumSize = new System.Drawing.Size(100, 0);
+            this.yedekAracTanimButton.Name = "yedekAracTanimButton";
+            this.yedekAracTanimButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("yedekAracTanimButton.SmallImage")));
+            this.yedekAracTanimButton.Text = "Yedek Araçlar";
+            this.yedekAracTanimButton.Click += new System.EventHandler(this.yedekAracTanimButton_Click);
+            // 
+            // avukatTanimButton
+            // 
+            this.avukatTanimButton.Image = global::FiloKiralama.Properties.Resources.avukatlar;
+            this.avukatTanimButton.LargeImage = global::FiloKiralama.Properties.Resources.avukatlar;
+            this.avukatTanimButton.MinimumSize = new System.Drawing.Size(100, 0);
+            this.avukatTanimButton.Name = "avukatTanimButton";
+            this.avukatTanimButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("avukatTanimButton.SmallImage")));
+            this.avukatTanimButton.Text = "Avukatlar";
+            this.avukatTanimButton.Click += new System.EventHandler(this.avukatTanimButton_Click);
+            // 
             // genelRibbonTab
             // 
             this.genelRibbonTab.Name = "genelRibbonTab";
@@ -115,6 +204,56 @@
             this.genelRibbonPanel.Name = "genelRibbonPanel";
             this.genelRibbonPanel.Text = "";
             // 
+            // aracRibbonButton
+            // 
+            this.aracRibbonButton.Image = global::FiloKiralama.Properties.Resources.car32;
+            this.aracRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.car32;
+            this.aracRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
+            this.aracRibbonButton.Name = "aracRibbonButton";
+            this.aracRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("aracRibbonButton.SmallImage")));
+            this.aracRibbonButton.Text = "Araçlar";
+            this.aracRibbonButton.Click += new System.EventHandler(this.aracRibbonButton_Click);
+            // 
+            // teklifRibbonButton
+            // 
+            this.teklifRibbonButton.Image = global::FiloKiralama.Properties.Resources.contract32;
+            this.teklifRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.contract32;
+            this.teklifRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
+            this.teklifRibbonButton.Name = "teklifRibbonButton";
+            this.teklifRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("teklifRibbonButton.SmallImage")));
+            this.teklifRibbonButton.Text = "Teklif Sözleşme";
+            this.teklifRibbonButton.Click += new System.EventHandler(this.teklifRibbonButton_Click);
+            // 
+            // lastikRibbonButton
+            // 
+            this.lastikRibbonButton.Image = global::FiloKiralama.Properties.Resources.tire32;
+            this.lastikRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.tire32;
+            this.lastikRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
+            this.lastikRibbonButton.Name = "lastikRibbonButton";
+            this.lastikRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("lastikRibbonButton.SmallImage")));
+            this.lastikRibbonButton.Text = "Lastik Deposu";
+            this.lastikRibbonButton.Click += new System.EventHandler(this.lastikRibbonButton_Click);
+            // 
+            // hukukRibbonButton
+            // 
+            this.hukukRibbonButton.Image = global::FiloKiralama.Properties.Resources.court32;
+            this.hukukRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.court32;
+            this.hukukRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
+            this.hukukRibbonButton.Name = "hukukRibbonButton";
+            this.hukukRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("hukukRibbonButton.SmallImage")));
+            this.hukukRibbonButton.Text = "Hukuki Süreçler";
+            this.hukukRibbonButton.Click += new System.EventHandler(this.hukukRibbonButton_Click);
+            // 
+            // finansRibbonButton
+            // 
+            this.finansRibbonButton.Image = global::FiloKiralama.Properties.Resources.finance32;
+            this.finansRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.finance32;
+            this.finansRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
+            this.finansRibbonButton.Name = "finansRibbonButton";
+            this.finansRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("finansRibbonButton.SmallImage")));
+            this.finansRibbonButton.Text = "Finansal Bilgiler";
+            this.finansRibbonButton.Click += new System.EventHandler(this.finansRibbonButton_Click);
+            // 
             // mainRibbon
             // 
             this.mainRibbon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -128,12 +267,14 @@
             this.mainRibbon.OrbDropDown.Location = new System.Drawing.Point(0, 0);
             this.mainRibbon.OrbDropDown.MenuItems.Add(this.ribbonOrbMenuItem1);
             this.mainRibbon.OrbDropDown.MenuItems.Add(this.ribbonOrbMenuItem2);
+            this.mainRibbon.OrbDropDown.MenuItems.Add(this.ribbonSeparator1);
             this.mainRibbon.OrbDropDown.Name = "";
             this.mainRibbon.OrbDropDown.RecentItems.Add(this.ribbonOrbRecentItem1);
-            this.mainRibbon.OrbDropDown.Size = new System.Drawing.Size(527, 160);
+            this.mainRibbon.OrbDropDown.Size = new System.Drawing.Size(527, 166);
             this.mainRibbon.OrbDropDown.TabIndex = 0;
             this.mainRibbon.OrbDropDown.Text = "ASD";
             this.mainRibbon.OrbStyle = System.Windows.Forms.RibbonOrbStyle.Office_2010;
+            this.mainRibbon.OrbVisible = false;
             // 
             // 
             // 
@@ -149,6 +290,32 @@
             this.mainRibbon.TabSpacing = 3;
             this.mainRibbon.Text = "ribbon1";
             this.mainRibbon.Click += new System.EventHandler(this.mainRibbon_Click);
+            // 
+            // ribbonOrbMenuItem1
+            // 
+            this.ribbonOrbMenuItem1.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left;
+            this.ribbonOrbMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem1.Image")));
+            this.ribbonOrbMenuItem1.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem1.LargeImage")));
+            this.ribbonOrbMenuItem1.Name = "ribbonOrbMenuItem1";
+            this.ribbonOrbMenuItem1.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem1.SmallImage")));
+            this.ribbonOrbMenuItem1.Text = "ribbonOrbMenuItem1";
+            // 
+            // ribbonOrbMenuItem2
+            // 
+            this.ribbonOrbMenuItem2.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left;
+            this.ribbonOrbMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem2.Image")));
+            this.ribbonOrbMenuItem2.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem2.LargeImage")));
+            this.ribbonOrbMenuItem2.Name = "ribbonOrbMenuItem2";
+            this.ribbonOrbMenuItem2.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem2.SmallImage")));
+            this.ribbonOrbMenuItem2.Text = "ribbonOrbMenuItem2";
+            // 
+            // ribbonOrbRecentItem1
+            // 
+            this.ribbonOrbRecentItem1.Image = ((System.Drawing.Image)(resources.GetObject("ribbonOrbRecentItem1.Image")));
+            this.ribbonOrbRecentItem1.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbRecentItem1.LargeImage")));
+            this.ribbonOrbRecentItem1.Name = "ribbonOrbRecentItem1";
+            this.ribbonOrbRecentItem1.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbRecentItem1.SmallImage")));
+            this.ribbonOrbRecentItem1.Text = "ribbonOrbRecentItem1";
             // 
             // groupBox1
             // 
@@ -179,6 +346,28 @@
             this.dataGridView2.Size = new System.Drawing.Size(495, 308);
             this.dataGridView2.TabIndex = 4;
             this.dataGridView2.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView2_CellFormatting);
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "Description";
+            this.Column6.FillWeight = 250F;
+            this.Column6.HeaderText = "Hatırlatma";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 250;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "Day";
+            this.Column7.HeaderText = "Kalan Gün";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
             // 
             // panel1
             // 
@@ -356,191 +545,9 @@
             this.Column5.ReadOnly = true;
             this.Column5.Width = 50;
             // 
-            // ribbonOrbMenuItem1
+            // ribbonSeparator1
             // 
-            this.ribbonOrbMenuItem1.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left;
-            this.ribbonOrbMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem1.Image")));
-            this.ribbonOrbMenuItem1.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem1.LargeImage")));
-            this.ribbonOrbMenuItem1.Name = "ribbonOrbMenuItem1";
-            this.ribbonOrbMenuItem1.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem1.SmallImage")));
-            this.ribbonOrbMenuItem1.Text = "ribbonOrbMenuItem1";
-            // 
-            // ribbonOrbMenuItem2
-            // 
-            this.ribbonOrbMenuItem2.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left;
-            this.ribbonOrbMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem2.Image")));
-            this.ribbonOrbMenuItem2.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem2.LargeImage")));
-            this.ribbonOrbMenuItem2.Name = "ribbonOrbMenuItem2";
-            this.ribbonOrbMenuItem2.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem2.SmallImage")));
-            this.ribbonOrbMenuItem2.Text = "ribbonOrbMenuItem2";
-            // 
-            // ribbonOrbRecentItem1
-            // 
-            this.ribbonOrbRecentItem1.Image = ((System.Drawing.Image)(resources.GetObject("ribbonOrbRecentItem1.Image")));
-            this.ribbonOrbRecentItem1.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbRecentItem1.LargeImage")));
-            this.ribbonOrbRecentItem1.Name = "ribbonOrbRecentItem1";
-            this.ribbonOrbRecentItem1.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbRecentItem1.SmallImage")));
-            this.ribbonOrbRecentItem1.Text = "ribbonOrbRecentItem1";
-            // 
-            // aracRibbonButton
-            // 
-            this.aracRibbonButton.Image = global::FiloKiralama.Properties.Resources.car32;
-            this.aracRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.car32;
-            this.aracRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
-            this.aracRibbonButton.Name = "aracRibbonButton";
-            this.aracRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("aracRibbonButton.SmallImage")));
-            this.aracRibbonButton.Text = "Araçlar";
-            this.aracRibbonButton.Click += new System.EventHandler(this.aracRibbonButton_Click);
-            // 
-            // teklifRibbonButton
-            // 
-            this.teklifRibbonButton.Image = global::FiloKiralama.Properties.Resources.contract32;
-            this.teklifRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.contract32;
-            this.teklifRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
-            this.teklifRibbonButton.Name = "teklifRibbonButton";
-            this.teklifRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("teklifRibbonButton.SmallImage")));
-            this.teklifRibbonButton.Text = "Teklif Sözleşme";
-            this.teklifRibbonButton.Click += new System.EventHandler(this.teklifRibbonButton_Click);
-            // 
-            // lastikRibbonButton
-            // 
-            this.lastikRibbonButton.Image = global::FiloKiralama.Properties.Resources.tire32;
-            this.lastikRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.tire32;
-            this.lastikRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
-            this.lastikRibbonButton.Name = "lastikRibbonButton";
-            this.lastikRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("lastikRibbonButton.SmallImage")));
-            this.lastikRibbonButton.Text = "Lastik Deposu";
-            this.lastikRibbonButton.Click += new System.EventHandler(this.lastikRibbonButton_Click);
-            // 
-            // hukukRibbonButton
-            // 
-            this.hukukRibbonButton.Image = global::FiloKiralama.Properties.Resources.court32;
-            this.hukukRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.court32;
-            this.hukukRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
-            this.hukukRibbonButton.Name = "hukukRibbonButton";
-            this.hukukRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("hukukRibbonButton.SmallImage")));
-            this.hukukRibbonButton.Text = "Hukuki Süreçler";
-            this.hukukRibbonButton.Click += new System.EventHandler(this.hukukRibbonButton_Click);
-            // 
-            // finansRibbonButton
-            // 
-            this.finansRibbonButton.Image = global::FiloKiralama.Properties.Resources.finance32;
-            this.finansRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.finance32;
-            this.finansRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
-            this.finansRibbonButton.Name = "finansRibbonButton";
-            this.finansRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("finansRibbonButton.SmallImage")));
-            this.finansRibbonButton.Text = "Finansal Bilgiler";
-            this.finansRibbonButton.Click += new System.EventHandler(this.finansRibbonButton_Click);
-            // 
-            // musteriTanimButton
-            // 
-            this.musteriTanimButton.Image = global::FiloKiralama.Properties.Resources.customers;
-            this.musteriTanimButton.LargeImage = global::FiloKiralama.Properties.Resources.customers;
-            this.musteriTanimButton.MinimumSize = new System.Drawing.Size(100, 0);
-            this.musteriTanimButton.Name = "musteriTanimButton";
-            this.musteriTanimButton.SmallImage = global::FiloKiralama.Properties.Resources.customers;
-            this.musteriTanimButton.Text = "Müşteriler";
-            this.musteriTanimButton.Click += new System.EventHandler(this.musteriTanimButton_Click);
-            // 
-            // kullaniciTanimButton
-            // 
-            this.kullaniciTanimButton.Image = global::FiloKiralama.Properties.Resources.kullanicilar;
-            this.kullaniciTanimButton.LargeImage = global::FiloKiralama.Properties.Resources.kullanicilar;
-            this.kullaniciTanimButton.MinimumSize = new System.Drawing.Size(100, 0);
-            this.kullaniciTanimButton.Name = "kullaniciTanimButton";
-            this.kullaniciTanimButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("kullaniciTanimButton.SmallImage")));
-            this.kullaniciTanimButton.Text = "Kullanıcılar";
-            this.kullaniciTanimButton.Click += new System.EventHandler(this.kullaniciTanimButton_Click);
-            // 
-            // modelTanimButton
-            // 
-            this.modelTanimButton.DropDownItems.Add(this.ribbonButton3);
-            this.modelTanimButton.Image = global::FiloKiralama.Properties.Resources.carmodels;
-            this.modelTanimButton.LargeImage = global::FiloKiralama.Properties.Resources.carmodels;
-            this.modelTanimButton.MinimumSize = new System.Drawing.Size(100, 0);
-            this.modelTanimButton.Name = "modelTanimButton";
-            this.modelTanimButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("modelTanimButton.SmallImage")));
-            this.modelTanimButton.Text = "Araç Modelleri";
-            this.modelTanimButton.Click += new System.EventHandler(this.modelTanimButton_Click);
-            // 
-            // ribbonButton3
-            // 
-            this.ribbonButton3.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton3.Image")));
-            this.ribbonButton3.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton3.LargeImage")));
-            this.ribbonButton3.Name = "ribbonButton3";
-            this.ribbonButton3.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton3.SmallImage")));
-            this.ribbonButton3.Text = "ribbonButton3";
-            // 
-            // sigortaFirmaTanimButton
-            // 
-            this.sigortaFirmaTanimButton.Image = global::FiloKiralama.Properties.Resources.sigorta;
-            this.sigortaFirmaTanimButton.LargeImage = global::FiloKiralama.Properties.Resources.sigorta;
-            this.sigortaFirmaTanimButton.MinimumSize = new System.Drawing.Size(100, 0);
-            this.sigortaFirmaTanimButton.Name = "sigortaFirmaTanimButton";
-            this.sigortaFirmaTanimButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("sigortaFirmaTanimButton.SmallImage")));
-            this.sigortaFirmaTanimButton.Text = "Sigorta Firmaları";
-            this.sigortaFirmaTanimButton.Click += new System.EventHandler(this.sigortaFirmaTanimButton_Click);
-            // 
-            // bankaTanimButton
-            // 
-            this.bankaTanimButton.DropDownItems.Add(this.ribbonButton2);
-            this.bankaTanimButton.Image = global::FiloKiralama.Properties.Resources.bank;
-            this.bankaTanimButton.LargeImage = global::FiloKiralama.Properties.Resources.bank;
-            this.bankaTanimButton.MinimumSize = new System.Drawing.Size(100, 0);
-            this.bankaTanimButton.Name = "bankaTanimButton";
-            this.bankaTanimButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("bankaTanimButton.SmallImage")));
-            this.bankaTanimButton.Text = "Bankalar";
-            this.bankaTanimButton.Click += new System.EventHandler(this.bankaTanimButton_Click);
-            // 
-            // ribbonButton2
-            // 
-            this.ribbonButton2.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.Image")));
-            this.ribbonButton2.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.LargeImage")));
-            this.ribbonButton2.Name = "ribbonButton2";
-            this.ribbonButton2.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.SmallImage")));
-            this.ribbonButton2.Text = "ribbonButton2";
-            // 
-            // yedekAracTanimButton
-            // 
-            this.yedekAracTanimButton.Image = global::FiloKiralama.Properties.Resources.yedekarac;
-            this.yedekAracTanimButton.LargeImage = global::FiloKiralama.Properties.Resources.yedekarac;
-            this.yedekAracTanimButton.MinimumSize = new System.Drawing.Size(100, 0);
-            this.yedekAracTanimButton.Name = "yedekAracTanimButton";
-            this.yedekAracTanimButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("yedekAracTanimButton.SmallImage")));
-            this.yedekAracTanimButton.Text = "Yedek Araçlar";
-            this.yedekAracTanimButton.Click += new System.EventHandler(this.yedekAracTanimButton_Click);
-            // 
-            // avukatTanimButton
-            // 
-            this.avukatTanimButton.Image = global::FiloKiralama.Properties.Resources.avukatlar;
-            this.avukatTanimButton.LargeImage = global::FiloKiralama.Properties.Resources.avukatlar;
-            this.avukatTanimButton.MinimumSize = new System.Drawing.Size(100, 0);
-            this.avukatTanimButton.Name = "avukatTanimButton";
-            this.avukatTanimButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("avukatTanimButton.SmallImage")));
-            this.avukatTanimButton.Text = "Avukatlar";
-            this.avukatTanimButton.Click += new System.EventHandler(this.avukatTanimButton_Click);
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "Description";
-            this.Column6.FillWeight = 250F;
-            this.Column6.HeaderText = "Hatırlatma";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 250;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "Day";
-            this.Column7.HeaderText = "Kalan Gün";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
+            this.ribbonSeparator1.Name = "ribbonSeparator1";
             // 
             // MainForm
             // 
@@ -549,6 +556,7 @@
             this.ClientSize = new System.Drawing.Size(1362, 455);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.mainRibbon);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "MainForm";
             this.Text = "Göral Filo Kiralama";
@@ -606,6 +614,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewImageColumn Column8;
+        private System.Windows.Forms.RibbonSeparator ribbonSeparator1;
     }
 }
 

@@ -32,7 +32,7 @@ namespace FiloKiralama.Control.Teklif
             var teklifRow = teklifListControl1.Rows[rowIndex].DataBoundItem as Entity.Teklif;
             if (teklifRow == null) return;
             var frx = new Report();
-            frx.Load(@"../../Reports\teklifrapor.frx");
+            frx.Load(@"Reports\teklifrapor.frx");
             frx.SetParameterValue("paramKime", teklifRow.Firma);
             frx.SetParameterValue("paramDikk", teklifRow.Yetkili);
             frx.SetParameterValue("paramKayitNo", teklifRow.TeklifNo);
