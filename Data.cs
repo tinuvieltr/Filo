@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Windows.Forms;
 using FiloKiralama.Entity;
@@ -20,6 +21,7 @@ namespace FiloKiralama
 
         public static void InitData()
         {
+
             #region Araç Model
 
             var model = new AracModel();
@@ -185,8 +187,12 @@ namespace FiloKiralama
             Teklifler.Add(teklif);
             #endregion
 
-            #region Teklif Araç
+            #region Döviz
             
+            #endregion
+
+            #region Teklif Araç
+
             #endregion
         }
     }

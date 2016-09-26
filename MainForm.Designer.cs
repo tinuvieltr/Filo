@@ -31,17 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tanimlarRibbonTab = new System.Windows.Forms.RibbonTab();
             this.tanimlarRibbonPanel = new System.Windows.Forms.RibbonPanel();
-            this.genelRibbonTab = new System.Windows.Forms.RibbonTab();
-            this.genelRibbonPanel = new System.Windows.Forms.RibbonPanel();
-            this.mainRibbon = new System.Windows.Forms.Ribbon();
-            this.ribbonOrbMenuItem1 = new System.Windows.Forms.RibbonOrbMenuItem();
-            this.ribbonOrbMenuItem2 = new System.Windows.Forms.RibbonOrbMenuItem();
-            this.ribbonOrbRecentItem1 = new System.Windows.Forms.RibbonOrbRecentItem();
-            this.aracRibbonButton = new System.Windows.Forms.RibbonButton();
-            this.teklifRibbonButton = new System.Windows.Forms.RibbonButton();
-            this.lastikRibbonButton = new System.Windows.Forms.RibbonButton();
-            this.hukukRibbonButton = new System.Windows.Forms.RibbonButton();
-            this.finansRibbonButton = new System.Windows.Forms.RibbonButton();
             this.musteriTanimButton = new System.Windows.Forms.RibbonButton();
             this.kullaniciTanimButton = new System.Windows.Forms.RibbonButton();
             this.modelTanimButton = new System.Windows.Forms.RibbonButton();
@@ -51,6 +40,26 @@
             this.ribbonButton2 = new System.Windows.Forms.RibbonButton();
             this.yedekAracTanimButton = new System.Windows.Forms.RibbonButton();
             this.avukatTanimButton = new System.Windows.Forms.RibbonButton();
+            this.genelRibbonTab = new System.Windows.Forms.RibbonTab();
+            this.genelRibbonPanel = new System.Windows.Forms.RibbonPanel();
+            this.aracRibbonButton = new System.Windows.Forms.RibbonButton();
+            this.teklifRibbonButton = new System.Windows.Forms.RibbonButton();
+            this.lastikRibbonButton = new System.Windows.Forms.RibbonButton();
+            this.hukukRibbonButton = new System.Windows.Forms.RibbonButton();
+            this.finansRibbonButton = new System.Windows.Forms.RibbonButton();
+            this.mainRibbon = new System.Windows.Forms.Ribbon();
+            this.ribbonOrbMenuItem1 = new System.Windows.Forms.RibbonOrbMenuItem();
+            this.ribbonOrbMenuItem2 = new System.Windows.Forms.RibbonOrbMenuItem();
+            this.ribbonOrbRecentItem1 = new System.Windows.Forms.RibbonOrbRecentItem();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tanimlarRibbonTab
@@ -72,135 +81,6 @@
             this.tanimlarRibbonPanel.Items.Add(this.avukatTanimButton);
             this.tanimlarRibbonPanel.Name = "tanimlarRibbonPanel";
             this.tanimlarRibbonPanel.Text = "";
-            // 
-            // genelRibbonTab
-            // 
-            this.genelRibbonTab.Name = "genelRibbonTab";
-            this.genelRibbonTab.Panels.Add(this.genelRibbonPanel);
-            this.genelRibbonTab.Text = "Genel";
-            // 
-            // genelRibbonPanel
-            // 
-            this.genelRibbonPanel.ButtonMoreEnabled = false;
-            this.genelRibbonPanel.ButtonMoreVisible = false;
-            this.genelRibbonPanel.Items.Add(this.aracRibbonButton);
-            this.genelRibbonPanel.Items.Add(this.teklifRibbonButton);
-            this.genelRibbonPanel.Items.Add(this.lastikRibbonButton);
-            this.genelRibbonPanel.Items.Add(this.hukukRibbonButton);
-            this.genelRibbonPanel.Items.Add(this.finansRibbonButton);
-            this.genelRibbonPanel.Name = "genelRibbonPanel";
-            this.genelRibbonPanel.Text = "";
-            // 
-            // mainRibbon
-            // 
-            this.mainRibbon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mainRibbon.Location = new System.Drawing.Point(0, 0);
-            this.mainRibbon.Minimized = false;
-            this.mainRibbon.Name = "mainRibbon";
-            // 
-            // 
-            // 
-            this.mainRibbon.OrbDropDown.BorderRoundness = 8;
-            this.mainRibbon.OrbDropDown.Location = new System.Drawing.Point(0, 0);
-            this.mainRibbon.OrbDropDown.MenuItems.Add(this.ribbonOrbMenuItem1);
-            this.mainRibbon.OrbDropDown.MenuItems.Add(this.ribbonOrbMenuItem2);
-            this.mainRibbon.OrbDropDown.Name = "";
-            this.mainRibbon.OrbDropDown.RecentItems.Add(this.ribbonOrbRecentItem1);
-            this.mainRibbon.OrbDropDown.Size = new System.Drawing.Size(527, 160);
-            this.mainRibbon.OrbDropDown.TabIndex = 0;
-            this.mainRibbon.OrbDropDown.Text = "ASD";
-            this.mainRibbon.OrbStyle = System.Windows.Forms.RibbonOrbStyle.Office_2010;
-            // 
-            // 
-            // 
-            this.mainRibbon.QuickAccessToolbar.DropDownButtonVisible = false;
-            this.mainRibbon.QuickAccessToolbar.Enabled = false;
-            this.mainRibbon.QuickAccessToolbar.Visible = false;
-            this.mainRibbon.RibbonTabFont = new System.Drawing.Font("Trebuchet MS", 9F);
-            this.mainRibbon.Size = new System.Drawing.Size(886, 128);
-            this.mainRibbon.TabIndex = 0;
-            this.mainRibbon.Tabs.Add(this.genelRibbonTab);
-            this.mainRibbon.Tabs.Add(this.tanimlarRibbonTab);
-            this.mainRibbon.TabsMargin = new System.Windows.Forms.Padding(6, 26, 20, 0);
-            this.mainRibbon.TabSpacing = 3;
-            this.mainRibbon.Text = "ribbon1";
-            this.mainRibbon.Click += new System.EventHandler(this.mainRibbon_Click);
-            // 
-            // ribbonOrbMenuItem1
-            // 
-            this.ribbonOrbMenuItem1.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left;
-            this.ribbonOrbMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem1.Image")));
-            this.ribbonOrbMenuItem1.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem1.LargeImage")));
-            this.ribbonOrbMenuItem1.Name = "ribbonOrbMenuItem1";
-            this.ribbonOrbMenuItem1.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem1.SmallImage")));
-            this.ribbonOrbMenuItem1.Text = "ribbonOrbMenuItem1";
-            // 
-            // ribbonOrbMenuItem2
-            // 
-            this.ribbonOrbMenuItem2.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left;
-            this.ribbonOrbMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem2.Image")));
-            this.ribbonOrbMenuItem2.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem2.LargeImage")));
-            this.ribbonOrbMenuItem2.Name = "ribbonOrbMenuItem2";
-            this.ribbonOrbMenuItem2.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem2.SmallImage")));
-            this.ribbonOrbMenuItem2.Text = "ribbonOrbMenuItem2";
-            // 
-            // ribbonOrbRecentItem1
-            // 
-            this.ribbonOrbRecentItem1.Image = ((System.Drawing.Image)(resources.GetObject("ribbonOrbRecentItem1.Image")));
-            this.ribbonOrbRecentItem1.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbRecentItem1.LargeImage")));
-            this.ribbonOrbRecentItem1.Name = "ribbonOrbRecentItem1";
-            this.ribbonOrbRecentItem1.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbRecentItem1.SmallImage")));
-            this.ribbonOrbRecentItem1.Text = "ribbonOrbRecentItem1";
-            // 
-            // aracRibbonButton
-            // 
-            this.aracRibbonButton.Image = global::FiloKiralama.Properties.Resources.car32;
-            this.aracRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.car32;
-            this.aracRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
-            this.aracRibbonButton.Name = "aracRibbonButton";
-            this.aracRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("aracRibbonButton.SmallImage")));
-            this.aracRibbonButton.Text = "Araçlar";
-            this.aracRibbonButton.Click += new System.EventHandler(this.aracRibbonButton_Click);
-            // 
-            // teklifRibbonButton
-            // 
-            this.teklifRibbonButton.Image = global::FiloKiralama.Properties.Resources.contract32;
-            this.teklifRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.contract32;
-            this.teklifRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
-            this.teklifRibbonButton.Name = "teklifRibbonButton";
-            this.teklifRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("teklifRibbonButton.SmallImage")));
-            this.teklifRibbonButton.Text = "Teklif Sözleşme";
-            this.teklifRibbonButton.Click += new System.EventHandler(this.teklifRibbonButton_Click);
-            // 
-            // lastikRibbonButton
-            // 
-            this.lastikRibbonButton.Image = global::FiloKiralama.Properties.Resources.tire32;
-            this.lastikRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.tire32;
-            this.lastikRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
-            this.lastikRibbonButton.Name = "lastikRibbonButton";
-            this.lastikRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("lastikRibbonButton.SmallImage")));
-            this.lastikRibbonButton.Text = "Lastik Deposu";
-            this.lastikRibbonButton.Click += new System.EventHandler(this.lastikRibbonButton_Click);
-            // 
-            // hukukRibbonButton
-            // 
-            this.hukukRibbonButton.Image = global::FiloKiralama.Properties.Resources.court32;
-            this.hukukRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.court32;
-            this.hukukRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
-            this.hukukRibbonButton.Name = "hukukRibbonButton";
-            this.hukukRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("hukukRibbonButton.SmallImage")));
-            this.hukukRibbonButton.Text = "Hukuki Süreçler";
-            this.hukukRibbonButton.Click += new System.EventHandler(this.hukukRibbonButton_Click);
-            // 
-            // finansRibbonButton
-            // 
-            this.finansRibbonButton.Image = global::FiloKiralama.Properties.Resources.finance32;
-            this.finansRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.finance32;
-            this.finansRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
-            this.finansRibbonButton.Name = "finansRibbonButton";
-            this.finansRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("finansRibbonButton.SmallImage")));
-            this.finansRibbonButton.Text = "Finansal Bilgiler";
-            this.finansRibbonButton.Click += new System.EventHandler(this.finansRibbonButton_Click);
             // 
             // musteriTanimButton
             // 
@@ -290,16 +170,216 @@
             this.avukatTanimButton.Text = "Avukatlar";
             this.avukatTanimButton.Click += new System.EventHandler(this.avukatTanimButton_Click);
             // 
+            // genelRibbonTab
+            // 
+            this.genelRibbonTab.Name = "genelRibbonTab";
+            this.genelRibbonTab.Panels.Add(this.genelRibbonPanel);
+            this.genelRibbonTab.Text = "Genel";
+            // 
+            // genelRibbonPanel
+            // 
+            this.genelRibbonPanel.ButtonMoreEnabled = false;
+            this.genelRibbonPanel.ButtonMoreVisible = false;
+            this.genelRibbonPanel.Items.Add(this.aracRibbonButton);
+            this.genelRibbonPanel.Items.Add(this.teklifRibbonButton);
+            this.genelRibbonPanel.Items.Add(this.lastikRibbonButton);
+            this.genelRibbonPanel.Items.Add(this.hukukRibbonButton);
+            this.genelRibbonPanel.Items.Add(this.finansRibbonButton);
+            this.genelRibbonPanel.Name = "genelRibbonPanel";
+            this.genelRibbonPanel.Text = "";
+            // 
+            // aracRibbonButton
+            // 
+            this.aracRibbonButton.Image = global::FiloKiralama.Properties.Resources.car32;
+            this.aracRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.car32;
+            this.aracRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
+            this.aracRibbonButton.Name = "aracRibbonButton";
+            this.aracRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("aracRibbonButton.SmallImage")));
+            this.aracRibbonButton.Text = "Araçlar";
+            this.aracRibbonButton.Click += new System.EventHandler(this.aracRibbonButton_Click);
+            // 
+            // teklifRibbonButton
+            // 
+            this.teklifRibbonButton.Image = global::FiloKiralama.Properties.Resources.contract32;
+            this.teklifRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.contract32;
+            this.teklifRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
+            this.teklifRibbonButton.Name = "teklifRibbonButton";
+            this.teklifRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("teklifRibbonButton.SmallImage")));
+            this.teklifRibbonButton.Text = "Teklif Sözleşme";
+            this.teklifRibbonButton.Click += new System.EventHandler(this.teklifRibbonButton_Click);
+            // 
+            // lastikRibbonButton
+            // 
+            this.lastikRibbonButton.Image = global::FiloKiralama.Properties.Resources.tire32;
+            this.lastikRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.tire32;
+            this.lastikRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
+            this.lastikRibbonButton.Name = "lastikRibbonButton";
+            this.lastikRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("lastikRibbonButton.SmallImage")));
+            this.lastikRibbonButton.Text = "Lastik Deposu";
+            this.lastikRibbonButton.Click += new System.EventHandler(this.lastikRibbonButton_Click);
+            // 
+            // hukukRibbonButton
+            // 
+            this.hukukRibbonButton.Image = global::FiloKiralama.Properties.Resources.court32;
+            this.hukukRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.court32;
+            this.hukukRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
+            this.hukukRibbonButton.Name = "hukukRibbonButton";
+            this.hukukRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("hukukRibbonButton.SmallImage")));
+            this.hukukRibbonButton.Text = "Hukuki Süreçler";
+            this.hukukRibbonButton.Click += new System.EventHandler(this.hukukRibbonButton_Click);
+            // 
+            // finansRibbonButton
+            // 
+            this.finansRibbonButton.Image = global::FiloKiralama.Properties.Resources.finance32;
+            this.finansRibbonButton.LargeImage = global::FiloKiralama.Properties.Resources.finance32;
+            this.finansRibbonButton.MinimumSize = new System.Drawing.Size(100, 0);
+            this.finansRibbonButton.Name = "finansRibbonButton";
+            this.finansRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("finansRibbonButton.SmallImage")));
+            this.finansRibbonButton.Text = "Finansal Bilgiler";
+            this.finansRibbonButton.Click += new System.EventHandler(this.finansRibbonButton_Click);
+            // 
+            // mainRibbon
+            // 
+            this.mainRibbon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mainRibbon.Location = new System.Drawing.Point(0, 0);
+            this.mainRibbon.Minimized = false;
+            this.mainRibbon.Name = "mainRibbon";
+            // 
+            // 
+            // 
+            this.mainRibbon.OrbDropDown.BorderRoundness = 8;
+            this.mainRibbon.OrbDropDown.Location = new System.Drawing.Point(0, 0);
+            this.mainRibbon.OrbDropDown.MenuItems.Add(this.ribbonOrbMenuItem1);
+            this.mainRibbon.OrbDropDown.MenuItems.Add(this.ribbonOrbMenuItem2);
+            this.mainRibbon.OrbDropDown.Name = "";
+            this.mainRibbon.OrbDropDown.RecentItems.Add(this.ribbonOrbRecentItem1);
+            this.mainRibbon.OrbDropDown.Size = new System.Drawing.Size(527, 160);
+            this.mainRibbon.OrbDropDown.TabIndex = 0;
+            this.mainRibbon.OrbDropDown.Text = "ASD";
+            this.mainRibbon.OrbStyle = System.Windows.Forms.RibbonOrbStyle.Office_2010;
+            // 
+            // 
+            // 
+            this.mainRibbon.QuickAccessToolbar.DropDownButtonVisible = false;
+            this.mainRibbon.QuickAccessToolbar.Enabled = false;
+            this.mainRibbon.QuickAccessToolbar.Visible = false;
+            this.mainRibbon.RibbonTabFont = new System.Drawing.Font("Trebuchet MS", 9F);
+            this.mainRibbon.Size = new System.Drawing.Size(886, 128);
+            this.mainRibbon.TabIndex = 0;
+            this.mainRibbon.Tabs.Add(this.genelRibbonTab);
+            this.mainRibbon.Tabs.Add(this.tanimlarRibbonTab);
+            this.mainRibbon.TabsMargin = new System.Windows.Forms.Padding(6, 26, 20, 0);
+            this.mainRibbon.TabSpacing = 3;
+            this.mainRibbon.Text = "ribbon1";
+            this.mainRibbon.Click += new System.EventHandler(this.mainRibbon_Click);
+            // 
+            // ribbonOrbMenuItem1
+            // 
+            this.ribbonOrbMenuItem1.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left;
+            this.ribbonOrbMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem1.Image")));
+            this.ribbonOrbMenuItem1.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem1.LargeImage")));
+            this.ribbonOrbMenuItem1.Name = "ribbonOrbMenuItem1";
+            this.ribbonOrbMenuItem1.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem1.SmallImage")));
+            this.ribbonOrbMenuItem1.Text = "ribbonOrbMenuItem1";
+            // 
+            // ribbonOrbMenuItem2
+            // 
+            this.ribbonOrbMenuItem2.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left;
+            this.ribbonOrbMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem2.Image")));
+            this.ribbonOrbMenuItem2.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem2.LargeImage")));
+            this.ribbonOrbMenuItem2.Name = "ribbonOrbMenuItem2";
+            this.ribbonOrbMenuItem2.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbMenuItem2.SmallImage")));
+            this.ribbonOrbMenuItem2.Text = "ribbonOrbMenuItem2";
+            // 
+            // ribbonOrbRecentItem1
+            // 
+            this.ribbonOrbRecentItem1.Image = ((System.Drawing.Image)(resources.GetObject("ribbonOrbRecentItem1.Image")));
+            this.ribbonOrbRecentItem1.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbRecentItem1.LargeImage")));
+            this.ribbonOrbRecentItem1.Name = "ribbonOrbRecentItem1";
+            this.ribbonOrbRecentItem1.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbRecentItem1.SmallImage")));
+            this.ribbonOrbRecentItem1.Text = "ribbonOrbRecentItem1";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Location = new System.Drawing.Point(0, 128);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(886, 327);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(208)))), ((int)(((byte)(232)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 19);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(270, 150);
+            this.dataGridView1.TabIndex = 2;
+            // 
+            // Column1
+            // 
+            this.Column1.FillWeight = 50F;
+            this.Column1.HeaderText = "";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 50;
+            // 
+            // Column2
+            // 
+            this.Column2.FillWeight = 50F;
+            this.Column2.HeaderText = "Döviz";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 50;
+            // 
+            // Column3
+            // 
+            this.Column3.FillWeight = 25F;
+            this.Column3.HeaderText = "";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 25;
+            // 
+            // Column4
+            // 
+            this.Column4.FillWeight = 50F;
+            this.Column4.HeaderText = "Alış";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 50;
+            // 
+            // Column5
+            // 
+            this.Column5.FillWeight = 50F;
+            this.Column5.HeaderText = "Satış";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 50;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(886, 455);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.mainRibbon);
             this.KeyPreview = true;
             this.Name = "MainForm";
             this.Text = "Göral Filo Kiralama";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -328,6 +408,13 @@
         private System.Windows.Forms.RibbonOrbRecentItem ribbonOrbRecentItem1;
         private System.Windows.Forms.RibbonOrbMenuItem ribbonOrbMenuItem2;
         private System.Windows.Forms.Ribbon mainRibbon;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewImageColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewImageColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }
 
