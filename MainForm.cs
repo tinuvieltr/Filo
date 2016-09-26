@@ -1,33 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
+using System.IO;
+using System.Reflection;
 using System.Windows.Forms;
-using FiloKiralama.Dialog;
+using FastReport;
 using FiloKiralama.Dialog.Arac;
+using FiloKiralama.Dialog.Teklif;
 
 namespace FiloKiralama
 {
     public partial class MainForm : Form
     {
-        Splash _splash = new Splash();
 
         public MainForm()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             Data.InitData();
 
-            var d = new AracEditDialog();
-            d.Arac = Data.Araclar[0];
-            d.Show(this);
+            var frx = new Report();
+            frx.Load(@"../../Reports\teklifrapor.frx");
+            frx.SetParameterValue("paramKime", "Firma Adı buraya gelecek");
+            frx.Show();
         }
 
         private void mainRibbon_Click(object sender, EventArgs e)
@@ -45,7 +42,8 @@ namespace FiloKiralama
 
         private void teklifRibbonButton_Click(object sender, EventArgs e)
         {
-
+            var dialog = new TeklifLSearchDialog();
+            dialog.ShowDialog(this);
         }
 
         private void lastikRibbonButton_Click(object sender, EventArgs e)

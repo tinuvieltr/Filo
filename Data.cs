@@ -15,7 +15,9 @@ namespace FiloKiralama
         public static List<Arac> Araclar = new List<Arac>();
 
         public static List<Musteri> Musteriler = new List<Musteri>();
-		
+
+        public static List<Teklif> Teklifler = new List<Teklif>();
+
         public static void InitData()
         {
             #region Araç Model
@@ -98,6 +100,93 @@ namespace FiloKiralama
             Musteriler.Add(musteri);
 
 
+            #endregion
+
+            #region Teklif
+
+            var teklif = new Teklif();
+            teklif.Id = 1;
+            teklif.Email = "bposta@xktemlak.com";
+            teklif.Faks = "0(312) 011 22 33";
+            teklif.Firma = "XKT EMLAK";
+            teklif.GecerlilikSuresi = new DateTime().AddDays(15);
+            teklif.MusteriTemsilcisi = "İsmail H. Akdoğan";
+            teklif.TeklifNo = "1";
+            teklif.TeklifTarihi = DateTime.Now.AddDays(2);
+            teklif.Telefon = "0312 011 22 44";
+            teklif.TemsilciEmail = "ihakdogan@göralfilokiralama.com";
+            teklif.TemsilciTelefon = "0(312) 207 45 45";
+            teklif.Yetkili = "XKT EMLAK";
+            teklif.YillikKmSiniri = 50000;
+            teklif.ListTeklifArac = new List<TeklifArac>()
+            {
+                new TeklifArac(){Birim = Tanimlar.DovizKur.Euro,Id = 1,ModelId = 1,OpsiyonOzellikleri = "2008 Active 1.6 e-HDI ETG6 92 HP Stop&Start",TeklifId = 1,Tutar = 1500,Vade = 36}
+            };
+            Teklifler.Add(teklif);
+
+            teklif = new Teklif();
+            teklif.Id = 2;
+            teklif.Email = "aposta@yeppa.com";
+            teklif.Faks = "0(312) 011 22 33";
+            teklif.Firma = "YEPPA TURİZM";
+            teklif.GecerlilikSuresi = new DateTime().AddDays(15);
+            teklif.MusteriTemsilcisi = "İsmail H. Akdoğan";
+            teklif.TeklifNo = "1";
+            teklif.TeklifTarihi = DateTime.Now.AddDays(3);
+            teklif.Telefon = "0312 011 22 44";
+            teklif.TemsilciEmail = "ihakdogan@göralfilokiralama.com";
+            teklif.TemsilciTelefon = "0(312) 207 45 45";
+            teklif.Yetkili = "XKT EMLAK";
+            teklif.YillikKmSiniri = 50000;
+            teklif.ListTeklifArac = new List<TeklifArac>()
+            {
+                new TeklifArac(){Birim = Tanimlar.DovizKur.TL,Id = 2,ModelId = 1,OpsiyonOzellikleri = "2008 Active 1.6 e-HDI ETG6 92 HP Stop&Start",TeklifId = 1,Tutar = 2000,Vade = 36}
+            };
+            Teklifler.Add(teklif);
+
+            teklif = new Teklif();
+            teklif.Id = 3;
+            teklif.Email = "";
+            teklif.Faks = "0(312) 011 22 33";
+            teklif.Firma = "XKT EMLAK";
+            teklif.GecerlilikSuresi = new DateTime().AddDays(15);
+            teklif.MusteriTemsilcisi = "İsmail H. Akdoğan";
+            teklif.TeklifNo = "1";
+            teklif.TeklifTarihi = DateTime.Now.AddDays(15);
+            teklif.Telefon = "0312 011 22 44";
+            teklif.TemsilciEmail = "ihakdogan@göralfilokiralama.com";
+            teklif.TemsilciTelefon = "0(312) 207 45 45";
+            teklif.Yetkili = "XKT EMLAK";
+            teklif.YillikKmSiniri = 50000;
+            teklif.ListTeklifArac = new List<TeklifArac>()
+            {
+                new TeklifArac(){Birim = Tanimlar.DovizKur.TL,Id = 2,ModelId = 1,OpsiyonOzellikleri = "2008 Active 1.6 e-HDI ETG6 92 HP Stop&Start",TeklifId = 1,Tutar = 1200,Vade = 36}
+            };
+            Teklifler.Add(teklif);
+
+            teklif = new Teklif();
+            teklif.Id = 4;
+            teklif.Email = "";
+            teklif.Faks = "0(312) 011 22 33";
+            teklif.Firma = "XKT EMLAK";
+            teklif.GecerlilikSuresi = new DateTime().AddDays(15);
+            teklif.MusteriTemsilcisi = "İsmail H. Akdoğan";
+            teklif.TeklifNo = "1";
+            teklif.TeklifTarihi = DateTime.Now.AddDays(8);
+            teklif.Telefon = "0312 011 22 44";
+            teklif.TemsilciEmail = "ihakdogan@göralfilokiralama.com";
+            teklif.TemsilciTelefon = "0(312) 207 45 45";
+            teklif.Yetkili = "XKT EMLAK";
+            teklif.YillikKmSiniri = 50000;
+            teklif.ListTeklifArac = new List<TeklifArac>()
+            {
+                new TeklifArac(){Birim = Tanimlar.DovizKur.TL,Id = 2,ModelId = 1,OpsiyonOzellikleri = "2008 Active 1.6 e-HDI ETG6 92 HP Stop&Start",TeklifId = 1,Tutar = 900,Vade = 36}
+            };
+            Teklifler.Add(teklif);
+            #endregion
+
+            #region Teklif Araç
+            
             #endregion
         }
     }

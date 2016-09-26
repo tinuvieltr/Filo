@@ -50,6 +50,21 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FastReport">
+      <HintPath>bin\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars">
+      <HintPath>bin\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Editor">
+      <HintPath>bin\FastReport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Oracle">
+      <HintPath>bin\FastReport.Oracle.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Postgres">
+      <HintPath>bin\FastReport.Postgres.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -127,6 +142,12 @@
     <Compile Include="Control\Musteri\MusteriListControl.Designer.cs">
       <DependentUpon>MusteriListControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Control\Teklif\Teklif.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Teklif\Teklif.Designer.cs">
+      <DependentUpon>Teklif.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data.cs" />
     <Compile Include="Dialog\Arac\AracEditDialog.cs">
       <SubType>Form</SubType>
@@ -151,6 +172,12 @@
     </Compile>
     <Compile Include="Dialog\Musteri\MusteriSearchDialog.Designer.cs">
       <DependentUpon>MusteriSearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Splash\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\Splash\Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
     <Compile Include="Dialog\Teklif\TeklifEditDialog.cs">
       <SubType>Form</SubType>
@@ -191,12 +218,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Splash.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Splash.Designer.cs">
-      <DependentUpon>Splash.cs</DependentUpon>
-    </Compile>
     <Compile Include="Custom\ModelTypeConverter.cs" />
     <EmbeddedResource Include="Control\Arac\AracEditControl.resx">
       <DependentUpon>AracEditControl.cs</DependentUpon>
@@ -210,6 +231,9 @@
     <EmbeddedResource Include="Control\Arac\AracSearchControl.resx">
       <DependentUpon>AracSearchControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Control\Teklif\Teklif.resx">
+      <DependentUpon>Teklif.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dialog\Arac\AracEditDialog.resx">
       <DependentUpon>AracEditDialog.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialog\Musteri\MusteriSearchDialog.resx">
       <DependentUpon>MusteriSearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\Splash\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialog\Teklif\TeklifLSearchDialog.resx">
       <DependentUpon>TeklifLSearchDialog.cs</DependentUpon>
@@ -235,9 +262,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Splash.resx">
-      <DependentUpon>Splash.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -249,6 +273,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Reports\teklifrapor.frx" />
     <None Include="Resources\splash.jpg" />
   </ItemGroup>
   <ItemGroup>

@@ -28,19 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.teklif1 = new FiloKiralama.Control.Teklif.Teklif();
             this.SuspendLayout();
+            // 
+            // teklif1
+            // 
+            this.teklif1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.teklif1.Location = new System.Drawing.Point(0, 0);
+            this.teklif1.Name = "teklif1";
+            this.teklif1.Size = new System.Drawing.Size(907, 382);
+            this.teklif1.TabIndex = 0;
             // 
             // TeklifLSearchDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(531, 382);
+            this.ClientSize = new System.Drawing.Size(907, 382);
+            this.Controls.Add(this.teklif1);
             this.Name = "TeklifLSearchDialog";
-            this.Text = "TeklifLSearchDialog";
+            this.Text = "Teklif Sorgula";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private Control.Teklif.Teklif teklif1;
+
     }
 }

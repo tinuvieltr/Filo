@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FiloKiralama.Entity
 {
-    class Tanimlar
+    public class Tanimlar
     {
         public enum SigortaTur
         {
@@ -17,6 +17,13 @@ namespace FiloKiralama.Entity
         {
             Ocak = 1,
             Temmuz = 2
+        }
+
+        public enum DovizKur
+        {
+            TL = 1,
+            Dolar = 2,
+            Euro = 3
         }
     }
 }
