@@ -33,9 +33,9 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.teklifListControl1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.FirmaAdiTextbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.teklifListControl1)).BeginInit();
             this.SuspendLayout();
@@ -88,17 +88,6 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Firma Adı";
             // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::FiloKiralama.Properties.Resources.search24;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Location = new System.Drawing.Point(642, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 73);
-            this.button1.TabIndex = 4;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -118,6 +107,17 @@
             this.teklifListControl1.Name = "teklifListControl1";
             this.teklifListControl1.Size = new System.Drawing.Size(869, 246);
             this.teklifListControl1.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::FiloKiralama.Properties.Resources.find;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Location = new System.Drawing.Point(642, 18);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(84, 73);
+            this.button1.TabIndex = 4;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Teklif
             // 

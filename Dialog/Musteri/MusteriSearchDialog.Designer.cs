@@ -28,19 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.musteriListControl1 = new FiloKiralama.Control.Musteri.MusteriListControl();
             this.SuspendLayout();
+            // 
+            // musteriListControl1
+            // 
+            this.musteriListControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.musteriListControl1.Location = new System.Drawing.Point(0, 0);
+            this.musteriListControl1.Name = "musteriListControl1";
+            this.musteriListControl1.Size = new System.Drawing.Size(808, 401);
+            this.musteriListControl1.TabIndex = 0;
             // 
             // MusteriSearchDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(410, 261);
+            this.ClientSize = new System.Drawing.Size(808, 401);
+            this.Controls.Add(this.musteriListControl1);
             this.Name = "MusteriSearchDialog";
-            this.Text = "MusteriSearchDialog";
+            this.Text = "Müşteriler";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private Control.Musteri.MusteriListControl musteriListControl1;
     }
 }

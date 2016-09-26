@@ -195,6 +195,8 @@
     <Compile Include="Entity\AracMaliyet.cs" />
     <Compile Include="Entity\AracModel.cs" />
     <Compile Include="Entity\Bakim.cs" />
+    <Compile Include="Entity\Doviz.cs" />
+    <Compile Include="Entity\Hatirlatma.cs" />
     <Compile Include="Entity\Kullanicilar.cs" />
     <Compile Include="Entity\Lastik.cs" />
     <Compile Include="Entity\Media.cs" />
@@ -231,6 +233,12 @@
     <EmbeddedResource Include="Control\Arac\AracSearchControl.resx">
       <DependentUpon>AracSearchControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Control\Musteri\MusteriEditControl.resx">
+      <DependentUpon>MusteriEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Musteri\MusteriListControl.resx">
+      <DependentUpon>MusteriListControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Control\Teklif\Teklif.resx">
       <DependentUpon>Teklif.cs</DependentUpon>
     </EmbeddedResource>
@@ -239,6 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialog\Arac\AracSearchDialog.resx">
       <DependentUpon>AracSearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\Musteri\MusteriEditDialog.resx">
+      <DependentUpon>MusteriEditDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialog\Musteri\MusteriSearchDialog.resx">
       <DependentUpon>MusteriSearchDialog.cs</DependentUpon>
@@ -296,6 +307,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\search24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\add.png" />
+    <Content Include="Resources\alert-ok.png" />
+    <Content Include="Resources\alert-red.png" />
+    <Content Include="Resources\alert-yellow.png" />
+    <Content Include="Resources\avukatlar.png" />
+    <Content Include="Resources\bank.png" />
+    <Content Include="Resources\carmodels.png" />
+    <Content Include="Resources\customers.png" />
+    <Content Include="Resources\dollar.png" />
+    <Content Include="Resources\euro.png" />
+    <Content Include="Resources\find.png" />
+    <Content Include="Resources\kullanicilar.png" />
+    <Content Include="Resources\sigorta.png" />
+    <Content Include="Resources\up.png" />
+    <Content Include="Resources\yedekarac.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

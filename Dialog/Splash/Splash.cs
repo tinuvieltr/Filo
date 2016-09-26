@@ -27,8 +27,8 @@ namespace FiloKiralama.Dialog.Splash
         void timer_Tick(object sender, EventArgs e)
         {
             _sayac++;
-            Opacity = 1 - ((double)_sayac) / 5;
-            if (_sayac == 5)
+            Opacity = 1 - ((double)_sayac) / 8;
+            if (_sayac == 8)
             {
                 this.Visible = false;
                 var mainForm = new MainForm();

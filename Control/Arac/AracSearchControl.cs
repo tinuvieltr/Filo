@@ -6,6 +6,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using FiloKiralama.Dialog.Arac;
+using FiloKiralama.Entity;
 
 namespace FiloKiralama.Control
 {
@@ -21,6 +23,11 @@ namespace FiloKiralama.Control
             musteriCombo.DataSource = Data.Musteriler;
             musteriCombo.DisplayMember = "Ad";
             musteriCombo.ValueMember = "Id";
+
+            var autocomplete = new AutoCompleteStringCollection();
+            autocomplete.AddRange((from a in Data.Araclar
+                                   select a.Plaka).ToArray());
+            plakaTextbox.AutoCompleteCustomSource = autocomplete;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -48,6 +55,12 @@ namespace FiloKiralama.Control
             aracListControl1.aracGrid.Visible = true;
 
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var dialog = new AracEditDialog {Arac = new Arac()};
+            dialog.Show(this);
         }
     }
 }

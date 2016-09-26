@@ -19,6 +19,10 @@ namespace FiloKiralama
 
         public static List<Teklif> Teklifler = new List<Teklif>();
 
+        public static List<Doviz> Dovizler = new List<Doviz>();
+
+        public static List<Hatirlatma> Hatirlatmalar = new List<Hatirlatma>();
+
         public static void InitData()
         {
 
@@ -188,10 +192,42 @@ namespace FiloKiralama
             #endregion
 
             #region Döviz
-            
+
+            var doviz = new Doviz();
+            doviz.kur = Tanimlar.DovizKur.Dolar;
+            doviz.alis = 2.9780;
+            doviz.satis = 2.9792;
+            Dovizler.Add(doviz);
+
+            doviz = new Doviz();
+            doviz.kur = Tanimlar.DovizKur.Euro;
+            doviz.alis = 3.3567;
+            doviz.satis = 3.3578;
+            Dovizler.Add(doviz);
             #endregion
 
-            #region Teklif Araç
+            #region Hatirlatma
+
+            var hatirlatma = new Hatirlatma();
+            hatirlatma.Description = "Geciken müşteri ödemesi";
+            hatirlatma.Day = 3;
+            Hatirlatmalar.Add(hatirlatma);
+            hatirlatma = new Hatirlatma();
+            hatirlatma.Description = "06ED2636 aracı için trafik sigortası";
+            hatirlatma.Day = 7;
+            Hatirlatmalar.Add(hatirlatma);
+            hatirlatma = new Hatirlatma();
+            hatirlatma.Description = "06DA1112 aracı için muayene";
+            hatirlatma.Day = 8;
+            Hatirlatmalar.Add(hatirlatma);
+            hatirlatma = new Hatirlatma();
+            hatirlatma.Description = "06DA1112 aracı için kasko";
+            hatirlatma.Day = 15;
+            Hatirlatmalar.Add(hatirlatma);
+            hatirlatma = new Hatirlatma();
+            hatirlatma.Description = "06DA3412 aracı için bakım";
+            hatirlatma.Day = 22;
+            Hatirlatmalar.Add(hatirlatma);
 
             #endregion
         }
