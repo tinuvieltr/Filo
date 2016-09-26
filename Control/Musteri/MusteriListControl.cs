@@ -26,14 +26,25 @@ namespace FiloKiralama.Control.Musteri
             }
 
             musteriListControl1.CellClick += musteriListControl1_CellClick;
+
+            var autocomplete = new AutoCompleteStringCollection();
+            autocomplete.AddRange((from a in Data.Musteriler
+                                   select a.Ad).ToArray());
+            textBox1.AutoCompleteCustomSource = autocomplete;
+
+            autocomplete = new AutoCompleteStringCollection();
+            autocomplete.AddRange((from a in Data.Musteriler
+                                   select a.Yetkili).ToArray());
+            textBox2.AutoCompleteCustomSource = autocomplete;
         }
 
         void musteriListControl1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex != musteriListControl1.Columns["show_column"].Index) return;
             var rowIndex = e.RowIndex;
-            var arac = musteriListControl1.Rows[rowIndex].DataBoundItem as Entity.Arac;
+            var musteri = musteriListControl1.Rows[rowIndex].DataBoundItem as Entity.Musteri;
             var dialog = new MusteriEditDialog();
+            dialog.Musteri = musteri;
             dialog.Show(this);
 
         }

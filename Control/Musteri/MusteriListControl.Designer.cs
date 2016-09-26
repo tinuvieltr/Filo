@@ -32,10 +32,10 @@
             this.FirmaAdiTextbox = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.musteriListControl1)).BeginInit();
             this.FirmaAdiTextbox.SuspendLayout();
             this.SuspendLayout();
@@ -70,6 +70,8 @@
             // 
             // textBox1
             // 
+            this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.textBox1.Location = new System.Drawing.Point(143, 19);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(204, 20);
@@ -85,17 +87,6 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Müşteri";
             // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::FiloKiralama.Properties.Resources.find;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Location = new System.Drawing.Point(380, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 73);
-            this.button1.TabIndex = 4;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -108,6 +99,8 @@
             // 
             // textBox2
             // 
+            this.textBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.textBox2.Location = new System.Drawing.Point(143, 49);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(204, 20);
@@ -123,6 +116,17 @@
             this.button2.TabIndex = 12;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::FiloKiralama.Properties.Resources.find;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Location = new System.Drawing.Point(380, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(84, 73);
+            this.button1.TabIndex = 4;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MusteriListControl
             // 

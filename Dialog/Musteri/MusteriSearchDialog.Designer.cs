@@ -33,6 +33,7 @@
             // 
             // musteriListControl1
             // 
+            this.musteriListControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(208)))), ((int)(((byte)(232)))));
             this.musteriListControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.musteriListControl1.Location = new System.Drawing.Point(0, 0);
             this.musteriListControl1.Name = "musteriListControl1";
