@@ -17,7 +17,7 @@ namespace FiloKiralama.Control
         {
             InitializeComponent();
 
-            var showButtonColumn = new DataGridViewImageColumn { Name = "show_column", Width = 100 };
+            var showButtonColumn = new DataGridViewImageColumn { Name = "show_column", HeaderText = "Değiştir", Width = 100 };
             showButtonColumn.Image = Resources.search24;
             const int columnIndex = 0;
             if (this.aracGrid.Columns["show_column"] == null)

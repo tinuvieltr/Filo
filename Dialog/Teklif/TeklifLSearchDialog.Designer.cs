@@ -33,6 +33,7 @@
             // 
             // teklif1
             // 
+            this.teklif1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(208)))), ((int)(((byte)(232)))));
             this.teklif1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.teklif1.Location = new System.Drawing.Point(0, 0);
             this.teklif1.Name = "teklif1";

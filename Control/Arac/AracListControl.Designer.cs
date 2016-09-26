@@ -34,6 +34,7 @@
             // 
             // aracGrid
             // 
+            this.aracGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(208)))), ((int)(((byte)(232)))));
             this.aracGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.aracGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aracGrid.Location = new System.Drawing.Point(0, 0);

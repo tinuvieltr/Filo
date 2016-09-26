@@ -21,14 +21,14 @@ namespace FiloKiralama.Dialog.Splash
             var timer = new Timer();
             timer.Tick += timer_Tick;
             timer.Start();
-            timer.Interval = 150;
+            timer.Interval = 250;
         }
 
         void timer_Tick(object sender, EventArgs e)
         {
             _sayac++;
-            Opacity = 1 - ((double)_sayac) / 3;
-            if (_sayac == 3)
+            Opacity = 1 - ((double)_sayac) / 5;
+            if (_sayac == 5)
             {
                 this.Visible = false;
                 var mainForm = new MainForm();
