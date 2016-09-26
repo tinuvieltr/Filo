@@ -20,11 +20,6 @@ namespace FiloKiralama
         private void Form1_Load(object sender, EventArgs e)
         {
             Data.InitData();
-
-            var frx = new Report();
-            frx.Load(@"../../Reports\teklifrapor.frx");
-            frx.SetParameterValue("paramKime", "Firma Adı buraya gelecek");
-            frx.Show();
         }
 
         private void mainRibbon_Click(object sender, EventArgs e)

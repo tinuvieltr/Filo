@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
+using FastReport;
+using FiloKiralama.Properties;
 
 namespace FiloKiralama.Control.Teklif
 {
@@ -14,7 +11,30 @@ namespace FiloKiralama.Control.Teklif
         public Teklif()
         {
             InitializeComponent();
+
+            teklifListControl1.Visible = false;
             dateTimePicker2.Value = DateTime.Now.AddMonths(1);
+            var showButtonColumn = new DataGridViewImageColumn { Name = "show_column", Width = 100 };
+            showButtonColumn.Image = Resources.search24;
+            const int columnIndex = 0;
+            if (this.teklifListControl1.Columns["show_column"] == null)
+            {
+                this.teklifListControl1.Columns.Insert(columnIndex, showButtonColumn);
+            }
+
+            teklifListControl1.CellClick += aracGrid_CellClick;
+        }
+
+        void aracGrid_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex != teklifListControl1.Columns["show_column"].Index) return;
+            var rowIndex = e.RowIndex;
+            var teklifRow = teklifListControl1.Rows[rowIndex].DataBoundItem as Entity.Teklif;
+            if (teklifRow == null) return;
+            var frx = new Report();
+            frx.Load(@"../../Reports\teklifrapor.frx");
+            frx.SetParameterValue("paramKime", teklifRow.Firma);
+            frx.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
